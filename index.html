@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- NAVIGATION -->
 
     <nav class="navbar">
 
@@ -27,23 +27,22 @@
     </nav>
 
 
-    <!-- ================= DARK MODE ================= -->
+    <!-- DARK MODE -->
 
     <button
         class="dark-button"
         id="darkButton"
-        onclick="darkMode()"
-    >
+        onclick="darkMode()">
         🌙 Dark Mode
     </button>
 
 
-    <!-- ================= MAIN ================= -->
+    <!-- MAIN -->
 
     <main>
 
 
-        <!-- ================= HERO ================= -->
+        <!-- HERO -->
 
         <section class="hero">
 
@@ -63,24 +62,22 @@
             <img
                 src="photo.jpg"
                 alt="Phearoum"
-                class="profile-photo"
-            >
+                class="profile-photo">
 
             <br><br>
 
             <button
                 class="my-button"
-                onclick="changeText()"
-            >
+                onclick="changeText()">
                 ✨ Click Me
             </button>
 
         </section>
 
 
-        <!-- ================= PHOTO GALLERY ================= -->
+        <!-- PHOTO GALLERY -->
 
-        <section>
+        <section class="photo-section">
 
             <h2 class="section-title">
                 📸 My Photos
@@ -94,19 +91,18 @@
             <div class="gallery">
 
 
-                <!-- Photo 1 -->
+                <!-- PHOTO 1 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo1.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo1.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo1.jpg"
+                            src="./images/photo1.jpg"
                             alt="Photo 1"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -117,19 +113,18 @@
                 </div>
 
 
-                <!-- Photo 2 -->
+                <!-- PHOTO 2 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo2.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo2.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo2.jpg"
+                            src="./images/photo2.jpg"
                             alt="Photo 2"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -140,19 +135,18 @@
                 </div>
 
 
-                <!-- Photo 3 -->
+                <!-- PHOTO 3 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo3.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo3.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo3.jpg"
+                            src="./images/photo3.jpg"
                             alt="Photo 3"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -163,19 +157,18 @@
                 </div>
 
 
-                <!-- Photo 4 -->
+                <!-- PHOTO 4 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo4.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo4.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo4.jpg"
+                            src="./images/photo4.jpg"
                             alt="Photo 4"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -186,19 +179,18 @@
                 </div>
 
 
-                <!-- Photo 5 -->
+                <!-- PHOTO 5 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo5.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo5.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo5.jpg"
+                            src="./images/photo5.jpg"
                             alt="Photo 5"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -209,19 +201,18 @@
                 </div>
 
 
-                <!-- Photo 6 -->
+                <!-- PHOTO 6 -->
 
                 <div class="photo-card">
 
                     <a
-                        href="images/photo6.jpg"
-                        target="_blank"
-                    >
+                        href="./images/photo6.jpg"
+                        target="_blank">
 
                         <img
-                            src="images/photo6.jpg"
+                            src="./images/photo6.jpg"
                             alt="Photo 6"
-                        >
+                            loading="lazy">
 
                     </a>
 
@@ -237,7 +228,7 @@
         </section>
 
 
-        <!-- ================= SKILLS ================= -->
+        <!-- SKILLS -->
 
         <section class="skills-box">
 
@@ -290,7 +281,7 @@
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
+        <!-- ABOUT -->
 
         <section class="about-box">
 
@@ -321,7 +312,7 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
+        <!-- CONTACT -->
 
         <section class="contact-box">
 
@@ -340,7 +331,7 @@
         </section>
 
 
-        <!-- ================= CONTACT FORM ================= -->
+        <!-- CONTACT FORM -->
 
         <section class="form-box">
 
@@ -353,15 +344,10 @@
             </p>
 
 
-            <!-- FORMSPREE FORM -->
-
             <form
                 action="https://formspree.io/f/xwlkllrn"
-                method="POST"
-            >
+                method="POST">
 
-
-                <!-- Name -->
 
                 <label for="name">
                     Your Name
@@ -372,11 +358,8 @@
                     id="name"
                     name="name"
                     placeholder="Enter your name"
-                    required
-                >
+                    required>
 
-
-                <!-- Email -->
 
                 <label for="email">
                     Your Email
@@ -387,11 +370,8 @@
                     id="email"
                     name="email"
                     placeholder="Enter your email"
-                    required
-                >
+                    required>
 
-
-                <!-- Message -->
 
                 <label for="message">
                     Your Message
@@ -401,16 +381,12 @@
                     id="message"
                     name="message"
                     placeholder="Write your message..."
-                    required
-                ></textarea>
+                    required></textarea>
 
-
-                <!-- Send -->
 
                 <button
                     class="send-button"
-                    type="submit"
-                >
+                    type="submit">
                     📤 Send Message
                 </button>
 
@@ -420,21 +396,23 @@
         </section>
 
 
-        <!-- ================= GOOGLE BUTTON ================= -->
+        <!-- GOOGLE BUTTON -->
 
         <a
             class="google-button"
             href="https://www.google.com"
             target="_blank"
-        >
+            rel="noopener noreferrer">
+
             🔎 Visit Google
+
         </a>
 
 
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -449,12 +427,11 @@
     </footer>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- JAVASCRIPT -->
 
     <script>
 
-
-        /* Change Text */
+        // CHANGE TEXT
 
         function changeText() {
 
@@ -464,12 +441,11 @@
         }
 
 
-        /* Dark Mode */
+        // DARK MODE
 
         function darkMode() {
 
             document.body.classList.toggle("dark-mode");
-
 
             const button =
                 document.getElementById("darkButton");
@@ -502,7 +478,7 @@
         }
 
 
-        /* Remember Dark Mode */
+        // REMEMBER DARK MODE
 
         if (
             localStorage.getItem("darkMode") === "on"
@@ -518,7 +494,6 @@
                 "☀️ Light Mode";
 
         }
-
 
     </script>
 
