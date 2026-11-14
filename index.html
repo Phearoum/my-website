@@ -1,368 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Phearoum's Website</title>
-
     <link rel="stylesheet" href="style.css">
+
+    <!-- Styles for the new Windows Tools section -->
+    <style>
+        .windows-tools {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 25px;
+            border-radius: 16px;
+            background: var(--card-bg, #ffffff);
+            color: inherit;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+        .windows-tools .section-title { text-align: center; }
+        .windows-tools-intro { text-align: center; margin-bottom: 20px; }
+        .windows-warning {
+            padding: 14px 16px;
+            margin: 18px 0;
+            border: 1px solid #e5bd65;
+            border-radius: 10px;
+            background: #fff6df;
+            color: #684800;
+            text-align: left;
+            font-size: 14px;
+        }
+        .windows-tool-card {
+            margin: 18px 0;
+            padding: 18px;
+            border: 1px solid #d8deea;
+            border-radius: 12px;
+            background: #f4f6fb;
+            text-align: left;
+        }
+        .windows-tool-card h3 { margin: 0 0 12px; }
+        .windows-tool-card pre {
+            overflow-x: auto;
+            padding: 15px;
+            border-radius: 8px;
+            background: #151b29;
+            color: #e7efff;
+            white-space: pre;
+        }
+        .windows-tool-card code {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 14px;
+        }
+        .copy-code-button {
+            margin-top: 12px;
+            padding: 10px 18px;
+            border: 0;
+            border-radius: 8px;
+            background: #168447;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .copy-code-button:hover { background: #106b38; }
+        .copy-status {
+            min-height: 24px;
+            margin-top: 10px;
+            color: #168447;
+            text-align: center;
+            font-weight: bold;
+        }
+        body.dark-mode .windows-tools { background: #222938; }
+        body.dark-mode .windows-tool-card {
+            background: #2d3749;
+            border-color: #465269;
+        }
+        body.dark-mode .windows-warning {
+            background: #3a301d;
+            color: #ffe2a0;
+            border-color: #715b2b;
+        }
+        @media (max-width: 600px) {
+            .windows-tools { padding: 18px 14px; margin: 22px 10px; }
+            .windows-tool-card { padding: 14px; }
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
-
     <nav class="navbar">
-
         <h2 class="logo">Phearoum</h2>
-
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="#windows-tools">Windows Tools</a>
         </div>
-
     </nav>
 
-
     <!-- DARK MODE -->
-
-    <button
-        class="dark-button"
-        id="darkButton"
-        onclick="darkMode()">
+    <button class="dark-button" id="darkButton" onclick="darkMode()" type="button">
         🌙 Dark Mode
     </button>
 
-
     <!-- MAIN -->
-
     <main>
 
-
         <!-- HERO -->
-
         <section class="hero">
-
-            <p class="welcome-text">
-                👋 Welcome to my website
-            </p>
-
-            <h1 id="title">
-                Welcome to My Website
-            </h1>
-
+            <p class="welcome-text">👋 Welcome to my website</p>
+            <h1 id="title">Welcome to My Website</h1>
             <p>
                 Hello! My name is Phearoum.
                 Welcome to my personal website.
             </p>
-
-            <img
-                src="photo.jpg"
-                alt="Phearoum"
-                class="profile-photo">
-
+            <img src="photo.jpg" alt="Phearoum" class="profile-photo">
             <br><br>
-
-            <button
-                class="my-button"
-                onclick="changeText()">
+            <button class="my-button" onclick="changeText()" type="button">
                 ✨ Click Me
             </button>
-
         </section>
 
-
-        <!-- PHOTO GALLERY -->
-
+        <!--  -->
         <section class="photo-section">
+            <h2 class="section-title"> </h2>
+            <p> </p>
 
-            <h2 class="section-title">
-                📸 My Photos
-            </h2>
-
-            <p>
-                Here are some of my favorite photos.
-            </p>
-
-
+            <div class="photo-gallery">
+                
             </div>
-
+            <p class="gallery-note">
+               
+            </p>
         </section>
-
 
         <!-- SKILLS -->
-
         <section class="skills-box">
-
-            <h2 class="section-title">
-                💻 My Skills
-            </h2>
-
-
+            <h2 class="section-title">💻 My Skills</h2>
             <div class="skills">
-
-
-                <div class="skill">
-
-                    <h3>🌐 HTML</h3>
-
-                    <p>Beginner</p>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <h3>🎨 CSS</h3>
-
-                    <p>Beginner</p>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <h3>⚡ JavaScript</h3>
-
-                    <p>Beginner</p>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <h3>🇬🇧 English</h3>
-
-                    <p>Learning Every Day</p>
-
-                </div>
-
-
+                <div class="skill"><h3>🌐 HTML</h3><p>Beginner</p></div>
+                <div class="skill"><h3>🎨 CSS</h3><p>Beginner</p></div>
+                <div class="skill"><h3>⚡ JavaScript</h3><p>Beginner</p></div>
+                <div class="skill"><h3>🇬🇧 English</h3><p>Learning Every Day</p></div>
             </div>
-
         </section>
-
 
         <!-- ABOUT -->
-
         <section class="about-box">
-
-            <h2>
-                👤 About Me
-            </h2>
-
-            <p>
-                My name is Phearoum.
-            </p>
-
-            <p>
-                I am from Cambodia.
-            </p>
-
-            <p>
-                I am learning how to create websites.
-            </p>
-
-            <p>
-                I love playing football.
-            </p>
-
-            <p>
-                I am learning English every day.
-            </p>
-
+            <h2>👤 About Me</h2>
+            <p>My name is Phearoum.</p>
+            <p>I am from Cambodia.</p>
+            <p>I am learning how to create websites.</p>
+            <p>I love playing football.</p>
+            <p>I am learning English every day.</p>
         </section>
 
+        <!-- WINDOWS TOOLS -->
+        <section class="windows-tools" id="windows-tools">
+            <h2 class="section-title">🪟 Windows Tools</h2>
+            <p class="windows-tools-intro">
+                PowerShell commands and useful Windows information.
+            </p>
+
+            <div class="windows-warning">
+                <strong>Security warning:</strong>
+                These commands download a script from the internet and run it immediately.
+                Verify the website and review the script before running it. Only use
+                activation tools for a Windows license you are authorized to manage.
+                Do not run unfamiliar scripts as Administrator.
+            </div>
+
+            <article class="windows-tool-card">
+                <h3>Windows Activation — Older URL</h3>
+                <pre><code id="command1">irm https://massgrave.dev/get | iex</code></pre>
+                <button class="copy-code-button" type="button"
+                    onclick="copyCommand('command1', this)">📋 Copy Code</button>
+            </article>
+
+            <article class="windows-tool-card">
+                <h3>Windows Activation — Second URL</h3>
+                <pre><code id="command2">irm https://get.activated.win | iex</code></pre>
+                <button class="copy-code-button" type="button"
+                    onclick="copyCommand('command2', this)">📋 Copy Code</button>
+            </article>
+
+            <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+        </section>
 
         <!-- CONTACT -->
-
         <section class="contact-box">
-
-            <h2>
-                📞 Contact Me
-            </h2>
-
-            <p>
-                📧 Email: kunphearoum@gmail.com
-            </p>
-
-            <p>
-                📱 Phone: 0719816140
-            </p>
-
+            <h2>📞 Contact Me</h2>
+            <p>📧 Email: kunphearoum@gmail.com</p>
+            <p>📱 Phone: 0719816140</p>
         </section>
-
 
         <!-- CONTACT FORM -->
-
         <section class="form-box">
+            <h2>📩 Send Me a Message</h2>
+            <p>Feel free to send me a message.</p>
+            <form action="https://formspree.io/f/xwlkllrn" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
 
-            <h2>
-                📩 Send Me a Message
-            </h2>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email" required>
 
-            <p>
-                Feel free to send me a message.
-            </p>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Write your message..." required></textarea>
 
-
-            <form
-                action="https://formspree.io/f/xwlkllrn"
-                method="POST">
-
-
-                <label for="name">
-                    Your Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required>
-
-
-                <label for="email">
-                    Your Email
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required>
-
-
-                <label for="message">
-                    Your Message
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write your message..."
-                    required></textarea>
-
-
-                <button
-                    class="send-button"
-                    type="submit">
-                    📤 Send Message
-                </button>
-
-
+                <button class="send-button" type="submit">📤 Send Message</button>
             </form>
-
         </section>
 
-
         <!-- GOOGLE BUTTON -->
-
-        <a
-            class="google-button"
-            href="https://www.google.com"
-            target="_blank"
-            rel="noopener noreferrer">
-
+        <a class="google-button" href="https://www.google.com"
+            target="_blank" rel="noopener noreferrer">
             🔎 Visit Google
-
         </a>
-
 
     </main>
 
-
     <!-- FOOTER -->
-
     <footer>
-
-        <p>
-            © 2026 Phearoum. All Rights Reserved.
-        </p>
-
-        <p>
-            Made with ❤️ by Phearoum
-        </p>
-
+        <p>© 2026 Phearoum. All Rights Reserved.</p>
+        <p>Made with ❤️ by Phearoum</p>
     </footer>
 
-
     <!-- JAVASCRIPT -->
-
     <script>
-
         // CHANGE TEXT
-
         function changeText() {
-
-            document.getElementById("title").textContent =
-                "Hello Phearoum! 👋";
-
+            document.getElementById("title").textContent = "Hello Phearoum! 👋";
         }
-
 
         // DARK MODE
-
         function darkMode() {
-
             document.body.classList.toggle("dark-mode");
 
-            const button =
-                document.getElementById("darkButton");
+            const button = document.getElementById("darkButton");
+            const isDark = document.body.classList.contains("dark-mode");
 
+            localStorage.setItem("darkMode", isDark ? "on" : "off");
+            button.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+        }
 
-            if (
-                document.body.classList.contains("dark-mode")
-            ) {
+        // RESTORE SAVED DARK MODE
+        if (localStorage.getItem("darkMode") === "on") {
+            document.body.classList.add("dark-mode");
+            document.getElementById("darkButton").textContent = "☀️ Light Mode";
+        }
 
-                localStorage.setItem(
-                    "darkMode",
-                    "on"
-                );
+        // COPY WINDOWS COMMAND
+        async function copyCommand(elementId, button) {
+            const codeElement = document.getElementById(elementId);
+            const status = document.getElementById("copyStatus");
 
-                button.textContent =
-                    "☀️ Light Mode";
+            if (!codeElement) return;
 
-            } else {
+            const command = codeElement.textContent.trim();
 
-                localStorage.setItem(
-                    "darkMode",
-                    "off"
-                );
+            try {
+                await navigator.clipboard.writeText(command);
+                status.textContent = "✅ Code copied successfully!";
+            } catch (error) {
+                // Fallback for browsers that block the Clipboard API
+                const temporaryInput = document.createElement("textarea");
+                temporaryInput.value = command;
+                temporaryInput.style.position = "fixed";
+                temporaryInput.style.opacity = "0";
+                document.body.appendChild(temporaryInput);
+                temporaryInput.select();
 
-                button.textContent =
-                    "🌙 Dark Mode";
+                try {
+                    document.execCommand("copy");
+                    status.textContent = "✅ Code copied successfully!";
+                } catch (fallbackError) {
+                    status.textContent = "Copy failed. Please select and copy the code manually.";
+                }
 
+                temporaryInput.remove();
             }
 
+            const originalText = button.textContent;
+            button.textContent = "✅ Copied!";
+            window.setTimeout(() => {
+                button.textContent = originalText;
+            }, 1800);
         }
-
-
-        // REMEMBER DARK MODE
-
-        if (
-            localStorage.getItem("darkMode") === "on"
-        ) {
-
-            document.body.classList.add(
-                "dark-mode"
-            );
-
-            document.getElementById(
-                "darkButton"
-            ).textContent =
-                "☀️ Light Mode";
-
-        }
-
     </script>
 
-
 </body>
-
 </html>
